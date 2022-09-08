@@ -4,13 +4,11 @@
 
 /**
  *
- * main - Entry point
+ ** main - main block
  *
+ ** Return: 0
  *
- *
- * Return: Always 0 (Successful)
- *
- */
+ **/
 
 int main(void)
 
