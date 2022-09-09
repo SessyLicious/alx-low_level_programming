@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *  main - prints all numbers of base 16.
- *  Description:Prints all single digits of base 10 followed by new line
+ *  main - Entry Point.
+ *  Description:Prints all numbers of base 16.
  *  Return: Always 0 (Success)
  */
 int main(void)
