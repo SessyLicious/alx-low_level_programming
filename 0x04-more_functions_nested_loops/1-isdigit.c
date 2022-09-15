@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _isdigit - checks if parameter is a number between 0 to 9.
@@ -8,5 +7,5 @@
  */
 int _isdigit(int c)
 {
-	return (digit >= '0' && digit <= '9');
+	return (num >= '0' && num <= '9');
 }
