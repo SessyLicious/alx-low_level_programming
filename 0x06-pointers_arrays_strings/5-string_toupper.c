@@ -5,7 +5,7 @@
  * @s: input string
  * Return: the pointer to dest
  */
-char *string_toupper(char *s)
+char *string_toupper(char *x)
 {
 	int count = 0;
 
