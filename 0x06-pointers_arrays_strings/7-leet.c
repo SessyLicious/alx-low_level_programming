@@ -12,13 +12,13 @@ char *leet(char *x)
 	char array_up[] = {'A', 'E', 'L', 'O', 'T'};
 	char array_low[] = {'a', 'e', 'l', 'o', 't'};
 
-	while (s[i] != '\0')
+	while (x[i] != '\0')
 	{
 		for (j = 0; j < 5; j++)
 		{
-			if (s[i] == array_low[j] || s[i] == array_up[j])
+			if (x[i] == array_low[j] || x[i] == array_up[j])
 			{
-				s[i] = array_leet[j];
+				x[i] = array_leet[j];
 			}
 		}
 		i++;
