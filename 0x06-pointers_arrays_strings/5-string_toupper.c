@@ -9,11 +9,11 @@ char *string_toupper(char *x)
 {
 	int count = 0;
 
-	while (x[count])
+	while (x[count] != '\0')
 	{
-		if (x[count] >= 97 && x[count] <= 122)
+		if (x[count] > 96 && x[count] < 123)
 		{
-			x[count] = x[count] - 32;
+			x[count] = -= 32;
 		}
 		count++;
 	}
