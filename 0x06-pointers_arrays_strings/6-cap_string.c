@@ -7,22 +7,36 @@
  */
 char *cap_string(char *x)
 {
-	char plc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
-	int i = 13;
-        int j = 0, k;
 
-	while (x[j])
+	int i = 1, j, count;
+char a[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\n', '\t', ' '};
+
+
+	if (x[0] > 96 && x[0] < 123)
 	{
-		k = 0;
-		while (k < i)
+		x[0] -= 32;
+	}
+
+	while (x[i] != '\0')
+	{
+		if (x[i] > 96 && x[i] < 123)
 		{
-			if ((j == 0 || x[j - 1] == plc[k]) && (x[j] >= 97 && x[j] <= 122))
+			j = 0;
+			count = 0;
+			while (count == 0 && j < 13)
 			{
-				x[j] = x[j] - 32;
+				if (x[i - 1] == x[j])
+				{
+					count = 1;
+				}
+				j++;
 			}
-			k++;
+			if (count == 1)
+			{
+				s[count] -= 32;
+			}
 		}
-		j++;
+		i++;
 	}
 	return (x);
 }
