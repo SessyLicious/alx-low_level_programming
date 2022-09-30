@@ -9,21 +9,19 @@
  */
 int main(int argc, char *argv[])
 {
-	int num = 0, digit = 0, sum = 0;
+	int num, digit, sum = 0;
 
-	while (num < argc)
+	for (num = 1; num < argc; num++)
 	{
-		while (argv[num][digit])
+		for (digit = 0; argv[num][digit]; digit++)
 		{
 			if (argv[num][digit] < '0' || argv[num][digit] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
-			digit++;
 		}
 		sum += atoi(argv[num]);
-		num++;
 	}
 	printf("%d\n", sum);
 	return (0);
