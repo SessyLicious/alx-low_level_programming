@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void __attribute__((constructor)) hare(void);
+void __attribute__((constructor)) tortoise(void);
 
 /**
  * tortoise - Prints a string before the
